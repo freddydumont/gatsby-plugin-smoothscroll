@@ -1,0 +1,36 @@
+{
+  "name": "gatsby-plugin-smoothscroll",
+  "version": "1.0.0",
+  "author": "Frederick Morin (https://freddydumont.com)",
+  "description": "Polyfilled smoothscroll behavior and helper function for gatsby sites",
+  "keywords": [
+    "gatsby",
+    "gatsby-plugin",
+    "smooth",
+    "scroll",
+    "smoothscroll",
+    "scrollIntoView",
+    "polyfill"
+  ],
+  "license": "MIT",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/freddydumont/gatsby-plugin-smoothscroll.git"
+  },
+  "homepage": "https://github.com/freddydumont/gatsby-plugin-smoothscroll#readme",
+  "scripts": {
+    "build": "babel src --out-dir . --ignore **/__tests__",
+    "prepare": "cross-env NODE_ENV=production npm run build",
+    "watch": "babel -w src --out-dir . --ignore **/__tests__"
+  },
+  "dependencies": {
+    "smoothscroll-polyfill": "^0.4.4"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "babel-preset-gatsby-package": "^0.2.4",
+    "cross-env": "^5.2.1"
+  }
+}
