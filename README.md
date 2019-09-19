@@ -10,10 +10,10 @@ It also includes a `scrollTo` helper function as its main export that you can us
 
 ```bash
 # npm
-npm install gastby-plugin-smoothscroll
+npm install gatsby-plugin-smoothscroll
 
 # yarn
-yarn add gastby-plugin-smoothscroll
+yarn add gatsby-plugin-smoothscroll
 ```
 
 ## When do I use this plugin?
