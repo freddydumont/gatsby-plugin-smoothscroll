@@ -2,7 +2,7 @@
   "name": "gatsby-plugin-smoothscroll",
   "version": "1.0.1",
   "author": "Frederick Morin (https://freddydumont.com)",
-  "description": "Polyfilled smoothscroll behavior and helper function for gatsby sites",
+  "description": "Polyfilled smooth scrolling behavior and helper function for Gatsby sites.",
   "keywords": [
     "gatsby",
     "gatsby-plugin",

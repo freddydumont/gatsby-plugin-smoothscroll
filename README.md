@@ -1,4 +1,6 @@
-## Description
+# gatsby-plugin-smoothscroll
+
+Polyfilled smooth scrolling behavior and helper function for Gatsby sites.
 
 The plugin uses [`smoothscroll-polyfill`](https://www.npmjs.com/package/smoothscroll-polyfill) and calls it during the `onClientEntry` Gatsby lifecycle method.
 
