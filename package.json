@@ -14,6 +14,9 @@
   ],
   "license": "MIT",
   "private": false,
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/freddydumont/gatsby-plugin-smoothscroll.git"
