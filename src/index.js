@@ -1,15 +1,16 @@
 /**
  * Smooth scrolling onClick event handler
  * @param {string} selector argument will be passed to `querySelector`, usually an HTML id
+ * @param {string} [blockPosition='start'] argument will be used to determine position where will be scrolled to (start, center, end, nearest)
  * @returns {boolean} false if `document.querySelector` doesn't find a match, otherwise true
  */
-const scrollTo = (selector) => {
+const scrollTo = (selector, blockPosition = 'start') => {
   const element = document.querySelector(selector);
 
   if (element) {
     element.scrollIntoView({
       behavior: 'smooth',
-      block: 'start',
+      block: blockPosition,
     });
 
     return true;
