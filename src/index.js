@@ -5,19 +5,11 @@
  * @param {string} [offsetSelector=''] optional, usually a HTML id, used to determine an offset in the case of a fixed navbar. If present, blockPosition defaults to 'start'
  * @returns {boolean} false if `document.querySelector` doesn't find a match, otherwise true
  */
-var scrollTo = function scrollTo(selector, blockPosition, offsetSelector) {
-  if (blockPosition === void 0) {
-    blockPosition = 'start';
-  }
-
-  if (offsetSelector === void 0) {
-    offsetSelector = '';
-  }
-
-  var element = document.querySelector(selector);
+const scrollTo = (selector, blockPosition, offsetSelector) => {
+  const element = document.querySelector(selector);
 
   if (offsetSelector !== '') {
-    var offsetElement = document.querySelector(offsetSelector);
+    const offsetElement = document.querySelector(offsetSelector);
   }
  
   if (element && !offsetElement) {
