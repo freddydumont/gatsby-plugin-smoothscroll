@@ -17,6 +17,7 @@ const scrollTo = (selector, blockPosition = 'start', offsetSelector = '') => {
       behavior: 'smooth',
       block: blockPosition,
     });
+    
     return true;
   }
   else if (element && offsetElement) {
@@ -25,6 +26,7 @@ const scrollTo = (selector, blockPosition = 'start', offsetSelector = '') => {
       top,
       behavior: 'smooth'
     });
+    
     return true;
   }
 
