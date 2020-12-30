@@ -29,8 +29,9 @@ const scrollTo = (selector, blockPosition='start', offsetSelector='') => {
   }
 
   if (process.env.NODE_ENV !== 'production') {
-    console.warn("gatsby-plugin-smoothscroll:\n The selector: '%s' wasn't found in the document.\n Make sure you pass in a valid CSS selector string.",
-    selector);
+    console.warn(
+      "gatsby-plugin-smoothscroll:\n The selector: '%s' wasn't found in the document.\n Make sure you pass in a valid CSS selector string.",
+      selector);
   }
 
   return false;
