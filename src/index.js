@@ -5,7 +5,7 @@
  * @param {string} [offsetSelector=''] optional, usually a HTML id, used to determine an offset in the case of a fixed navbar. If present, blockPosition defaults to 'start'
  * @returns {boolean} false if `document.querySelector` doesn't find a match, otherwise true
  */
-const scrollTo = (selector, blockPosition, offsetSelector) => {
+const scrollTo = (selector, blockPosition='start', offsetSelector='') => {
   const element = document.querySelector(selector);
 
   if (offsetSelector !== '') {
@@ -15,7 +15,7 @@ const scrollTo = (selector, blockPosition, offsetSelector) => {
   if (element && !offsetElement) {
     element.scrollIntoView({
       behavior: 'smooth',
-      block: blockPosition
+      block: blockPosition,
     });
     return true;
   }
@@ -29,7 +29,8 @@ const scrollTo = (selector, blockPosition, offsetSelector) => {
   }
 
   if (process.env.NODE_ENV !== 'production') {
-    console.warn("gatsby-plugin-smoothscroll:\n The selector: '%s' wasn't found in the document.\n Make sure you pass in a valid CSS selector string.", selector);
+    console.warn("gatsby-plugin-smoothscroll:\n The selector: '%s' wasn't found in the document.\n Make sure you pass in a valid CSS selector string.",
+    selector);
   }
 
   return false;
