@@ -21,9 +21,9 @@ const scrollTo = (selector, blockPosition = 'start', offsetSelector = '') => {
     return true;
   }
   else if (element && offsetElement) {
-    const top = element.getBoundingClientRect().top - offsetElement.clientHeight;
+    const top = window.scrollY + element.getBoundingClientRect().top - offsetElement.clientHeight;
     window.scrollTo({
-      top,
+      top: top,
       behavior: 'smooth'
     });
     
