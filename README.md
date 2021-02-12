@@ -44,7 +44,7 @@ Then use it as an `onClick` event handler:
 
 Or if you want to offset the scroll by the height of #some-other-id:
 ```jsx
-<button onClick={() => scrollTo('#some-id', undefined, 'some-other-id',)})}>My link</button>
+<button onClick={() => scrollTo('#some-id', undefined, '#some-other-id',)})}>My link</button>
 ```
 
 Note, when providing an element to offset, you do not need to provide a block position as 'start' is always used.
