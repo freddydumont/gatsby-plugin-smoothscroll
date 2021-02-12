@@ -42,4 +42,11 @@ Then use it as an `onClick` event handler:
 <button onClick={() => scrollTo('#some-id')}>My link</button>
 ```
 
+Or if you want to offset the scroll by the height of #some-other-id:
+```jsx
+<button onClick={() => scrollTo('#some-id', undefined, 'some-other-id',)})}>My link</button>
+```
+
+Note, when providing an element to offset, you do not need to provide a block position as 'start' is always used.
+
 Be aware that `scrollTo` uses [`document.querySelector()`](https://developer.mozilla.org/en-US/docs/Web/API/Document/querySelector) under the hood, so make sure to respect its syntax.
